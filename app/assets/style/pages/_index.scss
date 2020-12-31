@@ -1,0 +1,60 @@
+.banner-bg{
+    padding-top: 100%;
+    height: 100vh;
+
+    @media (min-width: 767px){
+        padding-top: 33.33%;
+    }
+
+    @media (min-width: 992px){
+        padding-top: 41.66%;
+    } 
+}
+
+.bg-center{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width:767px){
+    .h3-md{
+        font-size: 32px;
+    }
+
+    .offset-md-2{
+        margin-left: 16.67%;
+    }
+
+    .offset-md-12{
+        margin-top: 50px;
+        margin-left: 100%;
+    }
+}
+
+@media (min-width:992px){
+    .h1-lg{
+        font-size: 40px;
+    }
+
+    .text-lg-xl{
+        font-size: 24px;
+    }
+
+    .offset-lg-0{
+        margin-left: 0;
+    }
+
+    .offset-lg-9{
+        margin-top: 100px;
+        margin-left: 75%;
+    } 
+}
+
+
+.arrow_drop_down{
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+

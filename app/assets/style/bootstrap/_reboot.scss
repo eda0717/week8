@@ -140,6 +140,14 @@ ul ol {
   margin-bottom: 0;
 }
 
+li{
+  list-style: none;
+}
+
+ul{
+  padding-left: 0;
+}
+
 dt {
   font-weight: $dt-font-weight;
 }
@@ -189,8 +197,8 @@ a {
   background-color: transparent; // Remove the gray background on active links in IE 10.
 
   @include hover() {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    //color: $link-hover-color;
+    //text-decoration: $link-hover-decoration;
   }
 }
 
