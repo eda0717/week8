@@ -1,0 +1,412 @@
+---
+title: PETPET | 寵物寄宿
+layout: ./app/layout.ejs
+engine: ejs
+current: stay
+---
+
+<div class="container mb-3 mb-md-9">
+    <div class="row flex-row-reverse pt-10">
+        <div class="col-12 col-md-7 col-lg-8">
+            <img class="w-100 mb-3 mb-md-0" src="./assets/images/homestay-1.png" alt="homestay">
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column justify-content-center text-center text-md-left">
+            <h1 class="text-primary h4 h1-md font-weight-bold">寵物寄宿</h1>
+            <p class="text-primary text-lg text-md-xl font-weight-bold">給您的毛孩最舒適的環境</p>
+        </div>
+    </div>
+</div>
+
+<div class="bg-secondary mb-10 mb-md-9">
+    <div class="container">
+        <form class="row form-inline py-4">
+            <select class="custom-select my-1 mr-2 col-2 col-md-1" id="inlineFormCustomSelectPref">
+                <option selected>貓咪</option>
+                <option value="1">兔子</option>
+                <option value="2">小狗</option>
+            </select>
+            <select class="custom-select col-9 col-md-3 my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected>高雄市</option>
+                <option value="1">台北市</option>
+                <option value="2">台中市</option>
+            </select>
+            <input type="date" class="form-control col-5 col-md-3 mr-2" id="date" name="date">
+            <span class="px-2 d-none d-md-block">至</span>
+            <input type="date" class="form-control col-5 col-md-3" id="date" name="date">
+        </form>
+    </div>
+</div>
+
+<div class="container mb-7 mb-md-9 mb-lg-10">
+    <div class="row">
+        <div class="col-9 col-md-4 col-lg-3 mb-3">
+            <h3 class="text-primary font-weight-bold">本月熱門寄宿</h3>
+        </div>
+    </div>
+    <ul class="row">
+        <li class="col-12 col-md-4 mb-3">
+            <div class="card shadow">
+                <div class="card-img-top w-100 bg-center"
+                    style="background-image: url('./assets/images/index-2.jpeg');height: 120px;" alt="index-2">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-center align-items-center"><img
+                            src="./assets/images/person-1.png" alt="Jamie" class="photo"></div>
+                    <h6 class="card-title text-primary text-center">Jamie</h6>
+                    <p class="card-text text-primary text-center text-md-sm text-lg-base">寄宿、美容、寵物行為訓練</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn btn-info mb-4 px-7 py-2">預約</button>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="text-primary">
+                            <p>獲得評價</p>
+                            <p class="text-2xl font-weight-bold">198 <span class="text-sm">則</span></p>
+                        </div>
+                        <div class="text-primary">
+                            <p>已完成訂單</p>
+                            <p class="text-2xl font-weight-bold">580<span class="text-sm">件</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 col-md-4 mb-3">
+            <div class="card shadow">
+                <div class="card-img-top w-100 bg-center"
+                    style="background-image: url('./assets/images/index-3.jpeg');height: 120px;" alt="index-3">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-center align-items-center"><img
+                            src="./assets/images/person-2.png" alt="Eric" class="photo"></div>
+                    <h6 class="card-title text-primary text-center">Eric</h6>
+                    <p class="card-text text-primary text-center">寄宿、美容</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn btn-info mb-4 px-7 py-2">預約</button>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="text-primary">
+                            <p>獲得評價</p>
+                            <p class="text-2xl font-weight-bold">76 <span class="text-sm">則</span></p>
+                        </div>
+                        <div class="text-primary">
+                            <p>已完成訂單</p>
+                            <p class="text-2xl font-weight-bold">208<span class="text-sm">件</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 col-md-4">
+            <div class="card shadow">
+                <div class="card-img-top w-100 bg-center"
+                    style="background-image: url('./assets/images/index-4.jpeg');height: 120px;" alt="index-4">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-center align-items-center"><img
+                            src="./assets/images/person-3.png" alt="Yvonne" class="photo"></div>
+                    <h6 class="card-title text-primary text-center">Yvonne</h6>
+                    <p class="card-text text-primary text-center">美容、寵物行為訓練</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn btn-info mb-4 px-7 py-2">預約</button>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="text-primary">
+                            <p>獲得評價</p>
+                            <p class="text-2xl font-weight-bold">52 <span class="text-sm">則</span></p>
+                        </div>
+                        <div class="text-primary">
+                            <p>已完成訂單</p>
+                            <p class="text-2xl font-weight-bold">196<span class="text-sm">件</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="container mb-7 mb-md-9 mb-lg-10">
+    <ul class="row">
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-2.jpeg" class="card-img-top img-center" alt="寵屋屋">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">寵屋屋</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、美容洗澡、到府保姆</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-3.jpeg" class="card-img-top img-center" alt="毛孩好家">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">毛孩好家</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、美容洗澡、到府保姆</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-4.jpeg" class="card-img-top img-center" alt="妖貓X僕SS">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">妖貓X僕SS</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、美容洗澡</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-5.jpeg" class="card-img-top img-center" alt="貓是主我是僕">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">貓是主我是僕</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、美容洗澡、到府保姆</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-6.jpeg" class="card-img-top img-center" alt="汪汪隊">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">汪汪隊</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-xs text-primary">寄宿、到府保姆、寵物行為訓練</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-7.jpeg" class="card-img-top img-center" alt="卯咪">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">卯咪</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、寵物行為訓練</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/index-2.jpeg" class="card-img-top img-center" alt="貓狗大戰">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">貓狗大戰</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-xs text-primary">寄宿、美容洗澡、到府保姆澡</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
+            <div class="homestay-card">
+                <img src="./assets/images/homestay-8.jpeg" class="card-img-top img-center" alt="萌寵底家">
+                <div class="card-body border-bottom">
+                    <p class="card-title text-primary">萌寵底家</p>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <span class="material-icons text-secondary">
+                        star_rate
+                    </span>
+                    <p class="card-text text-sm text-primary">寄宿、到府保姆</p>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                    <div class="contact-link card-body text-center">
+                        <a href="#" class="card-link text-primary">聯繫</a>
+                    </div>
+                    <div class="reverse-link card-body text-center">
+                        <a href="#" class="card-link text-info">預約</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <nav aria-label="row Page navigation example ">
+        <ul class="pagination d-flex justify-content-end">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
